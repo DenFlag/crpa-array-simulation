@@ -24,7 +24,7 @@ def create_figure_and_axes():
 
     ax_sir.set_ylabel("SIR, dB")
     ax_sir.grid(True)
-
+    fig.subplots_adjust(hspace=0.35, wspace=0.25)
     return fig, ax_array, ax_levels, ax_sir
 
 
@@ -108,3 +108,4 @@ def clear_axes(ax_levels, ax_sir):
 
     ax_levels.grid(True)
     ax_sir.grid(True)
+
